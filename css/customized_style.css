@@ -1,0 +1,243 @@
+/* CSS for the team member container */
+.team-member {
+    position: relative;
+    
+}
+
+/* CSS for the gray background */
+.gray-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* CSS for the member description */
+.member-description {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.team-member:hover .gray-background {
+    opacity: 1;
+    visibility: visible;
+}
+
+.team-member:hover .member-description {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* CSS for the team member images */
+.team-member img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+/*** 
+
+====================================================================
+	Testimonail Section
+====================================================================
+
+***/
+
+
+.testimonial-sectionn{
+	position:relative;
+	padding:110px 0px 110px;
+	background-color:#f9f9f9;
+	background-size:cover;
+	background-position:center bottom;
+}
+
+.testimonial-sectionn .inner-container{
+	position:relative;
+	max-width:870px;
+	margin:0 auto;
+}
+
+.testimonial-sectionn .inner-container .owl-dots{
+	position:relative;
+	text-align:center;
+	margin-top:30px;
+}
+
+.testimonial-sectionn .inner-container .owl-dots .owl-dot{
+	position:relative;
+	width:18px;
+	height:18px;
+	opacity:0.50;
+	
+	margin:0px 5px;
+	border-radius:50%;
+	display:inline-block;
+	background-color:#FCAF17;
+	-webkit-transition:all 300ms ease;
+	-ms-transition:all 300ms ease;
+	-o-transition:all 300ms ease;
+	-moz-transition:all 300ms ease;
+	transition:all 300ms ease;
+}
+
+.testimonial-sectionn .inner-container .owl-dots .owl-dot:hover,
+.testimonial-sectionn .inner-container .owl-dots .owl-dot.active{
+	opacity:1;
+}
+
+.testimonial-sectionn .inner-container .owl-nav{
+	position:absolute;
+	left:-120px;
+	top:50%;
+	right:-120px;
+	margin-top:-40px;
+}
+
+.testimonial-sectionn .inner-container .owl-nav .owl-prev{
+	position:absolute;
+	left:0px;
+	width:80px;
+	height:80px;
+	color:#ffffff;
+	font-size:34px;
+	text-align:center;
+	line-height:70px;
+	border:3px solid #ffffff;
+	border-radius:50%;
+	display:inline-block;
+	background-color:#1B1464;
+	-webkit-transition:all 300ms ease;
+	-ms-transition:all 300ms ease;
+	-o-transition:all 300ms ease;
+	-moz-transition:all 300ms ease;
+	transition:all 300ms ease;
+}
+
+.testimonial-sectionn .inner-container .owl-nav .owl-next{
+	position:absolute;
+	right:0px;
+	width:80px;
+	height:80px;
+	color:#ffffff;
+	font-size:34px;
+	text-align:center;
+	line-height:70px;
+	border:3px solid #ffffff;
+	border-radius:50%;
+	display:inline-block;
+	background-color:#1B1464;
+	-webkit-transition:all 300ms ease;
+	-ms-transition:all 300ms ease;
+	-o-transition:all 300ms ease;
+	-moz-transition:all 300ms ease;
+	transition:all 300ms ease;
+}
+
+.testimonial-sectionn .inner-container .owl-nav .owl-prev:hover,
+.testimonial-sectionn .inner-container .owl-nav .owl-next:hover{
+	background-color:#FCAF17;
+	border-color:#FCAF17;
+}
+
+.testimonial-blockk{
+	position:relative;
+}
+
+.testimonial-blockk .inner-box{
+	position:relative;
+	text-align:center;
+	padding:0px 50px 50px;
+}
+
+.testimonial-blockk .inner-box .quote-icon{
+	position:absolute;
+	left:80px;
+	top:100px;
+	opacity:0.50;
+	color:#FCAF17;
+	line-height:1em;
+	font-size:40px;
+}
+
+.testimonial-blockk .inner-box:before{
+	position:absolute;
+	content:'';
+	left:0px;
+	top:60px;
+	right:0px;
+	bottom:0px;
+	background-color:#ffffff;
+	box-shadow:0px 0px 8px rgba(0,0,0,0.03);
+}
+
+.testimonial-blockk .inner-box .author-image{
+	position:relative;
+	width:117px;
+	height:117px;
+	margin:0 auto;
+	overflow:hidden;
+	margin-bottom:25px;
+	border-radius:50%;
+	display:inline-block;
+	border:8px solid #f9f9f9;
+}
+
+.testimonial-blockk .inner-box .text{
+	position:relative;
+	font-size:19px;
+	color:#575d6e;
+}
+
+.testimonial-blockk .inner-box .name{
+	position:relative;
+	color:#FCAF17;
+	font-size:22px;
+	letter-spacing:1px;
+	margin-top:20px;
+	text-transform:uppercase;
+	font-family: 'Bellefair', serif;
+}
+
+/* Assurer un arrière-plan uniforme pour la barre du logo et du menu */
+.header-upper {
+    background-color: #FCAF17 !important; /* Forcer la couleur de fond */
+}
+
+.header-upper .logo-box img {
+    max-width: 100px !important; /* Ajuster la taille du logo pour le mobile */
+}
+
+/* Supprimer les espaces indésirables entre le header et la section suivante */
+.main-header, .banner-section {
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #FCAF17 !important;
+}
+
+/* Ajustement pour mobile */
+@media (max-width: 768px) {
+    .header-upper {
+        background-color: #FCAF17 !important;
+    }
+
+    .mobile-nav-toggler span.icon {
+        color: #010f06 !important; /* Assurer que le bouton de menu est visible */
+    }
+}
